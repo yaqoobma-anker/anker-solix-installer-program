@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anker SOLIX | Installer Partner Program 2026</title>
+    <meta name="description" content="Join the Anker SOLIX Installer Partner Program. Earn up to 30% rebate on your first installation, access exclusive leads, training, and marketing support.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00a651;
+            --primary-dark: #008c44;
+            --primary-light: #e6f9ef;
+            --dark: #1a1a2e;
+            --gray-900: #111827;
+            --gray-700: #374151;
+            --gray-500: #6b7280;
+            --gray-300: #d1d5db;
+            --gray-100: #f3f4f6;
+            --white: #ffffff;
+            --accent: #0ea5e9;
+            --accent-light: #e0f2fe;
+            --warning: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--gray-700);
+            line-height: 1.6;
+            background: var(--white);
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--gray-300);
+            padding: 0 2rem;
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .nav-logo {
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--dark);
+            text-decoration: none;
+        }
+
+        .nav-logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--gray-700);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-cta {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: background 0.2s;
+        }
+
+        .nav-cta:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(135deg, var(--dark) 0%, #16213e 100%);
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 50%, rgba(0, 166, 81, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(14, 165, 233, 0.08) 0%, transparent 50%);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(0, 166, 81, 0.2);
+            border: 1px solid rgba(0, 166, 81, 0.4);
+            color: #4ade80;
+            padding: 0.375rem 1rem;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, #4ade80, #00a651);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.75);
+            max-width: 650px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.7;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1.5rem;
+            max-width: 700px;
+            margin: 3rem auto 0;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-value {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--white);
+        }
+
+        .hero-stat-label {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.25rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 166, 81, 0.3);
+        }
+
+        .btn-outline {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: var(--white);
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+
+        .btn-outline:hover {
+            border-color: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Sections */
+        .section {
+            padding: 5rem 2rem;
+        }
+
+        .section-alt {
+            background: var(--gray-100);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--gray-500);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Program Highlights */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .highlight-card {
+            background: var(--white);
+            border: 1px solid var(--gray-300);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .highlight-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 8px 24px rgba(0, 166, 81, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .highlight-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary-light);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .highlight-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-card p {
+            color: var(--gray-500);
+            font-size: 0.95rem;
+        }
+
+        /* Incentive Section */
+        .incentive-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .incentive-main {
+            background: linear-gradient(135deg, var(--dark) 0%, #16213e 100%);
+            border-radius: 16px;
+            padding: 3rem;
+            color: var(--white);
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        .incentive-main .big-number {
+            font-size: 5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #4ade80, #00a651);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+
+        .incentive-main h3 {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+            font-weight: 700;
+        }
+
+        .incentive-main p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.75rem;
+            font-size: 1rem;
+        }
+
+        .incentive-card {
+            background: var(--white);
+            border: 1px solid var(--gray-300);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .incentive-card h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .incentive-detail {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--gray-100);
+            font-size: 0.9rem;
+        }
+
+        .incentive-detail:last-child {
+            border-bottom: none;
+        }
+
+        .incentive-detail .label {
+            color: var(--gray-500);
+        }
+
+        .incentive-detail .value {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        /* Partner Tiers */
+        .tiers-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .tier-card {
+            border: 1px solid var(--gray-300);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+            background: var(--white);
+        }
+
+        .tier-card.featured {
+            border-color: var(--primary);
+            box-shadow: 0 8px 32px rgba(0, 166, 81, 0.12);
+            position: relative;
+        }
+
+        .tier-card.featured::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.25rem 1rem;
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        .tier-name {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gray-500);
+            margin-bottom: 0.5rem;
+        }
+
+        .tier-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .tier-features {
+            list-style: none;
+            text-align: left;
+            margin: 1.5rem 0;
+        }
+
+        .tier-features li {
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+            color: var(--gray-700);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .tier-features li::before {
+            content: "\2713";
+            color: var(--primary);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .tier-features li.disabled {
+            color: var(--gray-300);
+        }
+
+        .tier-features li.disabled::before {
+            content: "\2014";
+            color: var(--gray-300);
+        }
+
+        /* Process */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            position: relative;
+        }
+
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 32px;
+            left: 12.5%;
+            right: 12.5%;
+            height: 2px;
+            background: var(--gray-300);
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .process-step-number {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .process-step h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .process-step p {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+        }
+
+        /* Requirements */
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .req-card {
+            background: var(--white);
+            border: 1px solid var(--gray-300);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .req-card h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .req-list {
+            list-style: none;
+        }
+
+        .req-list li {
+            padding: 0.6rem 0;
+            font-size: 0.9rem;
+            color: var(--gray-700);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .req-list li:last-child {
+            border-bottom: none;
+        }
+
+        .req-list li::before {
+            content: "\25CF";
+            color: var(--primary);
+            font-size: 0.5rem;
+            margin-top: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--dark) 0%, #16213e 100%);
+            padding: 5rem 2rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2rem;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Google Form Embed */
+        .google-form-container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .google-form-container iframe {
+            display: block;
+            width: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-900);
+            color: rgba(255, 255, 255, 0.6);
+            padding: 3rem 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .tiers-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .incentive-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .process-steps::before {
+                display: none;
+            }
+
+            .requirements-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Scroll padding for anchors */
+        [id] {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">ANKER <span>SOLIX</span></a>
+            <ul class="nav-links">
+                <li><a href="#program">Program</a></li>
+                <li><a href="#incentives">Incentives</a></li>
+                <li><a href="#tiers">Partner Tiers</a></li>
+                <li><a href="#process">How It Works</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+            <a href="#apply" class="nav-cta">Apply Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Q3 2026 Installer Program</div>
+            <h1>Grow Your Business with <span>Anker SOLIX</span></h1>
+            <p>Join our Installer Partner Program and earn up to 30% rebate on your first residential energy storage installation. Access exclusive leads, professional training, and dedicated support.</p>
+            <div class="hero-actions">
+                <a href="#apply" class="btn-primary">
+                    <span>Become a Partner</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#program" class="btn-outline">Learn More</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value">30%</div>
+                    <div class="hero-stat-label">First Install Rebate</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">5%</div>
+                    <div class="hero-stat-label">Ongoing Rebate</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">10yr</div>
+                    <div class="hero-stat-label">Full Warranty</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">4hr</div>
+                    <div class="hero-stat-label">Support Response</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Overview -->
+    <section class="section" id="program">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Partner with Anker SOLIX?</h2>
+                <p>We provide everything you need to succeed in the residential energy storage market.</p>
+            </div>
+            <div class="highlights">
+                <div class="highlight-card">
+                    <div class="highlight-icon">$</div>
+                    <h3>Industry-Leading Rebates</h3>
+                    <p>Earn 30% rebate on your first installation per county. Plus ongoing 5% rebate on all subsequent orders with no cap.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">&#9733;</div>
+                    <h3>Exclusive Lead Access</h3>
+                    <p>Receive qualified homeowner leads from our website and partner channels, distributed by county to certified partners.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">&#9881;</div>
+                    <h3>Full Technical Support</h3>
+                    <p>Real-time remote support for your first installation, pre-install design review, and on-call guidance during installation.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">&#9733;</div>
+                    <h3>Professional Training</h3>
+                    <p>Comprehensive certification program covering product knowledge, installation best practices, sales techniques, and safety compliance.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">&#9750;</div>
+                    <h3>Marketing Co-investment</h3>
+                    <p>Access brand assets, co-marketing campaigns, trade show opportunities, and digital advertising support.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">&#9670;</div>
+                    <h3>10-Year Full Warranty</h3>
+                    <p>Industry-leading warranty coverage gives you and your customers confidence. Backed by Anker's proven track record in power electronics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Incentive Structure -->
+    <section class="section section-alt" id="incentives">
+        <div class="container">
+            <div class="section-header">
+                <h2>Rebate & Incentive Structure</h2>
+                <p>Transparent, straightforward incentives designed to reward your growth.</p>
+            </div>
+            <div class="incentive-grid">
+                <div class="incentive-main">
+                    <div class="big-number">30%</div>
+                    <h3>First Installation Rebate</h3>
+                    <p>Per county and per installer &mdash; your first successful installation earns a 30% rebate on SI Price (installer purchase price, excluding shipping and tax).</p>
+                </div>
+                <div class="incentive-card">
+                    <h4>First Installation Incentive</h4>
+                    <div class="incentive-detail">
+                        <span class="label">Rebate Rate</span>
+                        <span class="value">30% of SI Price</span>
+                    </div>
+                    <div class="incentive-detail">
+                        <span class="label">Scope</span>
+                        <span class="value">Per county + per installer</span>
+                    </div>
+                    <div class="incentive-detail">
+                        <span class="label">Payment (1st order)</span>
+                        <span class="value">Cash</span>
+                    </div>
+                    <div class="incentive-detail">
+                        <span class="label">Payment (subsequent)</span>
+                        <span class="value">Credit Note</span>
+                    </div>
+                    <div class="incentive-detail">
+                        <span class="label">Credit Note Expiry</span>
+                        <span class="value">No expiration</span>
+                    </div>
+                    <div class="incentive-detail">
+                        <span class="label">Condition</span>
+                        <span class="value">Successful installation + inspection</span>
+                    </div>
+                </div>
+                <div class="incentive-card">
+                    <h4>Repeat Purchase Incentive</h4>
+                    <div class="incentive-detail">
+                        <span class="label">Base Rebate</span>
+                        <span class="value">5% SI Price (Credit Note)</span>
+                    </div>
+                    <div class="incentive-detail">
+                        <span class="label">New County Bonus</span>
+                        <span class="value">Additional 5% CN</span>
+                    </div>
+                    <div class="incentive-detail">
+                        <span class="label">Applies To</span>
+                        <span class="value">All orders after first install</span>
+                    </div>
+                    <div class="incentive-detail">
+                        <span class="label">Credit Note Usage</span>
+                        <span class="value">Apply to future orders</span>
+                    </div>
+                    <div class="incentive-detail">
+                        <span class="label">Transferable</span>
+                        <span class="value">Non-transferable</span>
+                    </div>
+                    <div class="incentive-detail">
+                        <span class="label">County Determination</span>
+                        <span class="value">Based on permit address</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Tiers -->
+    <section class="section" id="tiers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Partner Tiers & Benefits</h2>
+                <p>Grow with us. Unlock more benefits as your partnership deepens.</p>
+            </div>
+            <div class="tiers-grid">
+                <div class="tier-card">
+                    <div class="tier-name">Tier 1</div>
+                    <div class="tier-title">Registered</div>
+                    <ul class="tier-features">
+                        <li>Submit W9 and qualifications</li>
+                        <li>Training invitations</li>
+                        <li>Policy updates & product materials</li>
+                        <li>First-install remote tech support</li>
+                        <li class="disabled">Certification & rebate eligibility</li>
+                        <li class="disabled">Exclusive leads distribution</li>
+                        <li class="disabled">Co-marketing & ad support</li>
+                    </ul>
+                </div>
+                <div class="tier-card featured">
+                    <div class="tier-name">Tier 2</div>
+                    <div class="tier-title">Certified</div>
+                    <ul class="tier-features">
+                        <li>30% first-install rebate</li>
+                        <li>5% ongoing rebate (CN)</li>
+                        <li>Full training + certification</li>
+                        <li>Brand content & asset library</li>
+                        <li>Showroom materials & sample unit (30% off)</li>
+                        <li>Financing solution access</li>
+                        <li>Standard support (4hr response)</li>
+                    </ul>
+                </div>
+                <div class="tier-card">
+                    <div class="tier-name">Tier 3</div>
+                    <div class="tier-title">Strategic</div>
+                    <ul class="tier-features">
+                        <li>10% ongoing volume discount</li>
+                        <li>Priority website lead distribution</li>
+                        <li>Digital ad co-investment</li>
+                        <li>Trade show co-exhibition</li>
+                        <li>Official website partner listing</li>
+                        <li>Dedicated support channel + county priority</li>
+                        <li>Up to 3 demo units at discount</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; color: var(--gray-500); font-size: 0.9rem;">
+                <strong>Tier Advancement:</strong> Certified &rarr; Strategic requires 5+ cumulative installations with zero major quality complaints.
+            </p>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section section-alt" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Get started in four simple steps.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="process-step-number">1</div>
+                    <h4>Register</h4>
+                    <p>Submit your W9, contractor license, and business credentials through our partner portal.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step-number">2</div>
+                    <h4>Get Certified</h4>
+                    <p>Complete our online training program (4hrs) and pass the certification exam.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step-number">3</div>
+                    <h4>Install</h4>
+                    <p>Complete your first installation with our dedicated technical support team on standby.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step-number">4</div>
+                    <h4>Get Paid</h4>
+                    <p>Upload verification photos, pass inspection, and receive your 30% rebate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verification Requirements -->
+    <section class="section" id="verification">
+        <div class="container">
+            <div class="section-header">
+                <h2>Program Requirements</h2>
+                <p>What you need to join and what we need to verify installations.</p>
+            </div>
+            <div class="requirements-grid">
+                <div class="req-card">
+                    <h4>Eligibility Requirements</h4>
+                    <ul class="req-list">
+                        <li>Valid W9 form and business registration</li>
+                        <li>Active Electrical Contractor License (or state equivalent)</li>
+                        <li>Complete Anker SOLIX certification training</li>
+                        <li>Signed Partner Agreement (pricing confidentiality, brand guidelines, quality commitment)</li>
+                        <li>Solar, generator, electrical, or EV charging installation experience preferred</li>
+                    </ul>
+                </div>
+                <div class="req-card">
+                    <h4>Installation Verification Checklist</h4>
+                    <ul class="req-list">
+                        <li>Pre-installation photos (install location, electrical panel)</li>
+                        <li>Post-installation photos (full product view, wiring close-up, nameplate/serial number)</li>
+                        <li>System operation screenshot (App status page)</li>
+                        <li>Permit copy (where locally required)</li>
+                        <li>Installation must comply with product manual specifications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="section section-alt" id="support">
+        <div class="container">
+            <div class="section-header">
+                <h2>Training & Support</h2>
+                <p>We invest in your success with comprehensive training and responsive support.</p>
+            </div>
+            <div class="highlights">
+                <div class="highlight-card">
+                    <div class="highlight-icon">&#9654;</div>
+                    <h3>Online Training (4 hrs)</h3>
+                    <p>Product specifications, installation procedures, competitive positioning, sales techniques, and safety/NEC compliance.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">&#9998;</div>
+                    <h3>Hands-On Workshop</h3>
+                    <p>Regional in-person training sessions covering electrical wiring, grid-tied/off-grid configuration, and troubleshooting.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">&#9742;</div>
+                    <h3>Dedicated Tech Support</h3>
+                    <p>First response within 4 hours. Real-time remote guidance for your first installation. Pre-install design review available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Timeline -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Program Timeline</h2>
+                <p>This program launches July 2026 with monthly policy updates.</p>
+            </div>
+            <div class="process-steps" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="process-step">
+                    <div class="process-step-number" style="background: var(--accent);">Jul</div>
+                    <h4>Launch & Onboarding</h4>
+                    <p>Program opens. First wave of partner registrations and certification training begins.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step-number" style="background: var(--primary);">Aug</div>
+                    <h4>Scale & Support</h4>
+                    <p>Expanded training sessions. First installations complete with full technical support.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step-number" style="background: var(--primary-dark);">Sep</div>
+                    <h4>Growth & Optimization</h4>
+                    <p>Program optimization based on partner feedback. Expanded county coverage and repeat orders.</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 2.5rem; color: var(--gray-500); font-size: 0.9rem;">
+                Program period: July &ndash; September 2026. Monthly eligibility determined by order date. All certified partners are eligible.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA / Google Form -->
+    <section class="cta-section" id="apply">
+        <h2>Ready to Grow with Anker SOLIX?</h2>
+        <p>Join hundreds of installers across the U.S. who are expanding their residential energy storage business with industry-leading incentives.</p>
+
+        <!-- ⚠️ Replace the src below with your own Google Form embed URL -->
+        <!-- Steps: forms.google.com → Create form → Send → Embed HTML → copy src URL -->
+        <div class="google-form-container">
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdTlg5ivHlHz6EKPQXO_Yhp4-EXXhDvwEq24gRY_8h4UwfvGQ/viewform?embedded=true"
+                height="2200"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                loading="lazy">
+                Loading form&hellip;
+            </iframe>
+        </div>
+
+        <p style="margin-top: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.5);">Questions? Contact us at installer-program@ankersolix.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Anker SOLIX. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p style="margin-top: 0.75rem; font-size: 0.8rem; color: rgba(255,255,255,0.4);">Program terms subject to change. Rebate details finalized monthly. Contact your Anker SOLIX representative for the latest information.</p>
+    </footer>
+    <script>
+        // Google Form dynamic height adjustment
+        (function() {
+            var iframe = document.querySelector('.google-form-container iframe');
+            if (!iframe) return;
+
+            // Listen for messages from Google Forms to auto-resize
+            window.addEventListener('message', function(e) {
+                if (e.origin.indexOf('docs.google.com') > -1 && e.data && e.data.height) {
+                    iframe.style.height = (parseInt(e.data.height) + 40) + 'px';
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
